@@ -46,7 +46,9 @@
         
         /* 9:16 Proof Gallery Layout Engine */
         .vertical-motion-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px 100px; }
-        .v-gallery-item { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.4s ease; }
+        
+        /* Changed background color to #111111 so frames are visible before assets load */
+        .v-gallery-item { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #111111; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.4s ease; }
         .v-gallery-item:hover { border-color: #ff6600 !important; transform: translateY(-8px); }
         .v-gallery-item img, .v-gallery-item iframe { width: 100%; height: 100%; object-fit: cover; display: block; border: none; }
         
@@ -54,4 +56,163 @@
             position: absolute; bottom: 16px; left: 16px; 
             font-family: 'JetBrains Mono'; font-size: 0.65rem; 
             background: rgba(0,0,0,0.85); padding: 6px 12px; 
-            border-left: 2px solid #ff66
+            border-left: 2px solid #ff6600; letter-spacing: 1px;
+            color: #ffffff !important;
+            z-index: 10;
+        }
+
+        /* 3-Step Benefit Pipeline Layout Engine */
+        .pipeline-flow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto 80px auto; padding: 0 20px; }
+        .pipeline-card { border-top: 2px solid rgba(255, 255, 255, 0.1); padding-top: 25px; transition: border-color 0.4s ease; }
+        .pipeline-card:hover { border-color: #ff6600 !important; }
+
+        /* BUTTON ARCHITECTURE */
+        .cta-btn { 
+            display: inline-block; background: #ff6600 !important; color: #000000 !important; 
+            padding: 18px 40px; text-decoration: none; 
+            font-family: 'JetBrains Mono'; font-weight: 800; font-size: 0.75rem; 
+            letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
+        }
+        .cta-btn:hover { background: #ffffff !important; color: #000000 !important; transform: scale(1.02); }
+
+        .outline-btn {
+            display: inline-block; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: #ffffff !important;
+            padding: 17px 35px; text-decoration: none;
+            font-family: 'JetBrains Mono'; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
+        }
+        .outline-btn:hover { border-color: #ff6600 !important; color: #ff6600 !important; }
+
+        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono'; font-size: 0.7rem; color: #444444; }
+
+        /* --- RESPONSIVE MEDIA COMPILER --- */
+        @media (max-width: 1024px) {
+            .vertical-motion-grid, .pipeline-flow-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav { padding: 15px 20px; }
+            .nav-right { gap: 15px; }
+            .nav-link { font-size: 0.65rem; }
+            .vertical-motion-grid, .pipeline-flow-grid { grid-template-columns: 1fr !important; padding: 20px; }
+            .section-header { padding-top: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html">916motion</a></div>
+        <div class="nav-right">
+            <a href="#vertical-protocols" class="nav-link" style="color: #ff6600 !important; font-weight: 700;">7S_MOTION</a>
+            <a href="#pipeline-intake" class="nav-link">SERVICE_LAB</a>
+            <a href="mailto:phong.dao@eosstudiolab.com" class="nav-link">CONNECT_LAB</a>
+            <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049c0 2.12.54 4.189 1.562 6.033L0 24l6.102-1.6c1.785.973 3.8 1.487 5.857 1.488h.005c6.637 0 12.048-5.412 12.051-12.05a11.816 11.816 0 00-3.565-8.483"/></svg>
+            </a>
+        </div>
+    </nav>
+
+    <header class="section-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); background: #000000;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 25px;">
+            // SECTION_01 // SYSTEM_DEFINITION
+        </div>
+        <h1 style="font-size: 2.2rem; font-weight: 700; line-height: 1.2; letter-spacing: 2px; max-width: 900px; margin: 0 auto 25px; font-family: 'Space Grotesk', sans-serif; color: #ffffff !important;">
+            VISUAL PROTOCOLS FOR CONSUMER TECH &amp; GADGET BRANDS
+        </h1>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; max-width: 800px; color: #a0a0a0 !important; margin: 0 auto; line-height: 1.8;">
+            &gt; 916MOTION OPERATES AS AN AUTONOMOUS PRODUCTION CELL. WE TRANSLATE RAW PRODUCT SPECIFICATIONS AND HARDWARE RENDERS INTO HIGH-FIDELITY, SCROLL-STOPPING 9:16 VISUAL CREATIVES.
+        </p>
+    </header>
+
+    <section id="vertical-protocols" style="padding-top: 100px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
+        
+        <header style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
+                // SECTION_02 // FRAME_CONSTRAINTS
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-transform: uppercase; color: #ffffff !important;">
+                9:16 VERTICAL PROOF ARCHIVE
+            </h2>
+        </header>
+
+        <div class="vertical-motion-grid">
+            <div class="v-gallery-item">
+                <img src="images/servicepage/Shoes_heroshot_comp_v1.jpg" alt="Aesthetic Demo">
+                <div class="gallery-label">01 // FINAL_AESTHETIC</div>
+            </div>
+
+            <div class="v-gallery-item">
+                <img src="images/servicepage/Mouse.png" alt="Structural Demo">
+                <div class="gallery-label">02 // RAW_STRUCTURE</div>
+            </div>
+
+            <div class="v-gallery-item">
+                <img src="images/servicepage/Headphone.jpg" alt="Core Design Demo">
+                <div class="gallery-label">03 // DESIGN_CORE</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pipeline-intake" style="padding: 120px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
+        
+        <header style="text-align: center; max-width: 900px; margin: 0 auto 80px auto;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
+                // SECTION_03 // PRODUCTION_PIPELINE
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1.1; letter-spacing: -0.5px; text-transform: uppercase; color: #ffffff !important;">
+                RAW CAD TO HIGH-CONVERTING ASSETS IN 3 STEPS
+            </h2>
+        </header>
+
+        <div class="pipeline-flow-grid">
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[01 // INTAKE]</div>
+                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Secure File Transfer</h4>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    You supply your raw industrial CAD files or engineering data under a strict mutual NDA. No file preparation required on your end.
+                </p>
+            </div>
+
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[02 // ANIMATION]</div>
+                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Macro Motion Craft</h4>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    We build high-fidelity 3D texturing, lightning, and micro-macro movements customized entirely for the 9:16 vertical phone viewport.
+                </p>
+            </div>
+
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[03 // DISPATCH]</div>
+                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Ready-To-Run Ads</h4>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    Get scroll-stopping, high-converting 9:16 video outputs optimized straight for Amazon Mobile, TikTok, and Meta Ad Managers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="conversion-gate" style="padding: 100px 40px; background: #050505;">
+        <div style="text-align: center; background: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.1); max-width: 800px; margin: 0 auto; padding: 60px 40px;">
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px;">
+                // TERMINAL INTAKE GATEWAY
+            </p>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 30px; text-transform: uppercase; color: #ffffff !important;">
+                Ready to Optimize Your Device Visuals?
+            </h3>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                <a href="mailto:phong.dao@eosstudiolab.com" class="cta-btn">
+                    [CONNECT_LAB_EMAIL]
+                </a>
+                <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank" class="outline-btn">
+                    [DIRECT_WHATSAPP]
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 916MOTION LAB. ALL RIGHTS RESERVED. RUNTIME // OPTIMIZED.
+    </div>
+
+</body>
+</html>
