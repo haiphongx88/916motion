@@ -46,31 +46,6 @@
         
         /* 9:16 Proof Gallery Layout Engine */
         .vertical-motion-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px 120px; }
-        .v-gallery-item { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #111111; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.4s ease; }
-        .v-gallery-item:hover { border-color: #ff6600 !important; transform: translateY(-8px); }
-        .v-gallery-item img, .v-gallery-item iframe { width: 100%; height: 100%; object-fit: cover; display: block; border: none; }
         
-        .gallery-label { 
-            position: absolute; bottom: 16px; left: 16px; 
-            font-family: 'JetBrains Mono'; font-size: 0.65rem; 
-            background: rgba(0,0,0,0.85); padding: 6px 12px; 
-            border-left: 2px solid #ff6600; letter-spacing: 1px;
-            color: #ffffff !important;
-            z-index: 10;
-        }
-
-        /* 3-Step Benefit Pipeline Layout Engine */
-        .pipeline-flow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto 80px auto; padding: 0 20px; }
-        .pipeline-card { border-top: 2px solid rgba(255, 255, 255, 0.1); padding-top: 25px; transition: border-color 0.4s ease; }
-        .pipeline-card:hover { border-color: #ff6600 !important; }
-
-        /* BUTTON ARCHITECTURE */
-        .cta-btn { 
-            display: inline-block; background: #ff6600 !important; color: #000000 !important; 
-            padding: 18px 40px; text-decoration: none; 
-            font-family: 'JetBrains Mono'; font-weight: 800; font-size: 0.75rem; 
-            letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
-        }
-        .cta-btn:hover { background: #ffffff !important; color: #000000 !important; transform: scale(1.02); }
-
-        .outline-btn {
+        /* Temporary background assigned as a dark gray tone (#222222) to trace layout lines */
+        .v-gallery-item { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #2222
