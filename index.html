@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE6007V768"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -14,8 +16,26 @@
     <title>916motion | 9:16 Vertical Video Ads for Tech & Gadget Brands</title>
     <meta name="description" content="High-converting 9:16 vertical video ads and clean 3D motion layouts for tech gadgets. Fully optimized to stop the scroll on Amazon Mobile, TikTok, and Instagram Reels.">
     <meta name="keywords" content="9:16 Video Ads, Vertical Video, Tech Gadget Ads, Amazon Mobile Video, TikTok Video Ads, Instagram Reels Ads, Clean 3D Product Animation, E-commerce Creative Agency">
+    <meta name="robots" content="index, follow">
     
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://916motion.com/">
+
+    <!-- Open Graph / Facebook Meta Tags (Controls appearance when shared in DMs, WhatsApp, Slack) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://916motion.com/">
+    <meta property="og:title" content="916motion | 9:16 Vertical Video Ads for Tech & Gadget Brands">
+    <meta property="og:description" content="High-converting 9:16 vertical video ads and clean 3D motion layouts for tech gadgets. Fully optimized to stop the scroll.">
+    <meta property="og:image" content="https://916motion.com/images/servicepage/Mouse.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://916motion.com/">
+    <meta name="twitter:title" content="916motion | 9:16 Vertical Video Ads for Tech & Gadget Brands">
+    <meta name="twitter:description" content="High-converting 9:16 vertical video ads for tech gadgets.">
+    <meta name="twitter:image" content="https://916motion.com/images/servicepage/Mouse.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,10 +55,10 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(5, 5, 5, 0.7);
         }
-        .logo a { color: #ff6600 !important; text-decoration: none; font-family: 'JetBrains Mono'; font-weight: 800; text-transform: uppercase; font-size: 18px; letter-spacing: 2px; }
+        .logo a { color: #ff6600 !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-weight: 800; text-transform: uppercase; font-size: 18px; letter-spacing: 2px; }
         
         .nav-right { display: flex; align-items: center; gap: 25px; }
-        .nav-link { color: #ffffff !important; text-decoration: none; font-size: 0.75rem; font-family: 'JetBrains Mono'; letter-spacing: 1px; transition: 0.3s; }
+        .nav-link { color: #ffffff !important; text-decoration: none; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; transition: 0.3s; }
         .nav-link:hover { color: #ff6600 !important; }
 
         /* --- SECTION UI MECHANICS --- */
@@ -47,14 +67,13 @@
         /* 9:16 Proof Gallery Layout Engine */
         .vertical-motion-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px 100px; }
         
-        /* Changed background color to #111111 so frames are visible before assets load */
         .v-gallery-item { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #111111; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.4s ease; }
         .v-gallery-item:hover { border-color: #ff6600 !important; transform: translateY(-8px); }
         .v-gallery-item img, .v-gallery-item iframe { width: 100%; height: 100%; object-fit: cover; display: block; border: none; }
         
         .gallery-label { 
             position: absolute; bottom: 16px; left: 16px; 
-            font-family: 'JetBrains Mono'; font-size: 0.65rem; 
+            font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; 
             background: rgba(0,0,0,0.85); padding: 6px 12px; 
             border-left: 2px solid #ff6600; letter-spacing: 1px;
             color: #ffffff !important;
@@ -70,7 +89,7 @@
         .cta-btn { 
             display: inline-block; background: #ff6600 !important; color: #000000 !important; 
             padding: 18px 40px; text-decoration: none; 
-            font-family: 'JetBrains Mono'; font-weight: 800; font-size: 0.75rem; 
+            font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 0.75rem; 
             letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
         }
         .cta-btn:hover { background: #ffffff !important; color: #000000 !important; transform: scale(1.02); }
@@ -78,11 +97,11 @@
         .outline-btn {
             display: inline-block; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: #ffffff !important;
             padding: 17px 35px; text-decoration: none;
-            font-family: 'JetBrains Mono'; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
         }
         .outline-btn:hover { border-color: #ff6600 !important; color: #ff6600 !important; }
 
-        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono'; font-size: 0.7rem; color: #444444; }
+        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #444444; }
 
         /* --- RESPONSIVE MEDIA COMPILER --- */
         @media (max-width: 1024px) {
@@ -103,28 +122,26 @@
     <nav>
         <div class="logo"><a href="index.html">916motion</a></div>
         <div class="nav-right">
-            <a href="https://www.instagram.com/fong_the_artist/?hl=en" target="_blank" style="color: #ff6600 !important; font-weight: 700;">SHOWCASE</a>
-            <a href=#tally-open=XxNVdg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave" class="nav-link">START_PROJECT</a>
-            <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank">DM_NOW</a>
-            <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank">
+            <a href="https://www.instagram.com/fong_the_artist/?hl=en" target="_blank" class="nav-link" style="color: #ff6600 !important; font-weight: 700;">SHOWCASE</a>
+            <!-- Fixed syntax error: added missing quote at the beginning of href -->
+            <a href="#tally-open=XxNVdg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave" class="nav-link">START_PROJECT</a>
+            <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank" class="nav-link">DM_NOW</a>
+            <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank" aria-label="Contact on WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049c0 2.12.54 4.189 1.562 6.033L0 24l6.102-1.6c1.785.973 3.8 1.487 5.857 1.488h.005c6.637 0 12.048-5.412 12.051-12.05a11.816 11.816 0 00-3.565-8.483"/></svg>
             </a>
         </div>
     </nav>
 
     <header class="section-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); background: #000000;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 25px;">
-        </div>
         <h1 style="font-size: 2.2rem; font-weight: 700; line-height: 1.2; letter-spacing: 2px; max-width: 900px; margin: 0 auto 25px; font-family: 'Space Grotesk', sans-serif; color: #ff6600 !important;">
             High-Converting SHORT VIDEO AD for PHYSICAL PRODUCT Brands
         </h1>
         <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; max-width: 800px; color: #a0a0a0 !important; margin: 0 auto; line-height: 1.8;">
-            &gt; 916MOTION IS A HIGH-VELOCITY CREATIVE LAB. WE TRANSFORM YOUR STILL PRODUCT IMAGES INTO DYNAMIC, SCROLL-STOPPING 9:16 VERTICAL ADS THAT DRIVE CONVERSIONS
+            &gt; 916MOTION IS A HIGH-VELOCITY CREATIVE LAB. WE TRANSFORM YOUR STILL PRODUCT IMAGES INTO DYNAMIC, SCROLL-STOPPING 9:16 VERTICAL ADS THAT DRIVE CONVERSIONS.
         </p>
     </header>
 
     <section id="vertical-protocols" style="padding-top: 100px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
-        
         <header style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
             <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
                 MULTI-STYLE HOOK STRUCTURES FOR CONVERTING MOBILE VIEWPORTS
@@ -135,24 +152,27 @@
         </header>
 
         <div class="vertical-motion-grid">
+            <!-- Asset 1 (Fixed alt descriptive text for hardware niche pairing) -->
             <div class="v-gallery-item">
-                <img src="images/servicepage/Shoes_heroshot_comp_v1.jpg" alt="Scroll Stopper">
+                <img src="images/servicepage/Shoes_heroshot_comp_v1.jpg" alt="Dynamic footwear visual layout showcase">
                 <div class="gallery-label">01 // CINEMA_EXPOSURE_BURSTS</div>
             </div>
 
+            <!-- Asset 2 -->
             <div class="v-gallery-item">
-                <img src="images/servicepage/Mouse.png" alt="Retention Boost">
+                <img src="images/servicepage/Mouse.png" alt="Tech hardware gaming mouse split device animation">
                 <div class="gallery-label">02 // FLOATING_SPLIT_SCREEN</div>
             </div>
+
+            <!-- Asset 3 -->
             <div class="v-gallery-item">
-                <img src="images/servicepage/Headphone.jpg" alt="High CTR Conversion">
+                <img src="images/servicepage/Headphone.jpg" alt="Premium tech audio headphone macro diagnostic rendering">
                 <div class="gallery-label">03 // MACRO_SCAN_DIAGNOSTIC</div>
             </div>
         </div>
     </section>
 
     <section id="pipeline-intake" style="padding: 120px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
-        
         <header style="text-align: center; max-width: 900px; margin: 0 auto 80px auto;">
             <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
                 THE CREATIVE WORKFLOW
@@ -165,15 +185,15 @@
         <div class="pipeline-flow-grid">
             <div class="pipeline-card">
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[01 // INTAKE]</div>
-                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Upload Your Assets</h4>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Upload Your Assets</h3>
                 <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
-                    Send us your standard product images, catalog shots, or studio angles. No complex assets, storyboards, or pre-editing required on your end
+                    Send us your standard product images, catalog shots, or studio angles. No complex assets, storyboards, or pre-editing required on your end.
                 </p>
             </div>
 
             <div class="pipeline-card">
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[02 // AD_ENGINE]</div>
-                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">High-Retention Editing</h4>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">High-Retention Editing</h3>
                 <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
                     We translate your static images into dynamic, high-velocity 9:16 video ads. We engineer aggressive hooks, seamless transitions, and native mobile typography.
                 </p>
@@ -181,7 +201,7 @@
 
             <div class="pipeline-card">
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">[03 // DISPATCH]</div>
-                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Ready-To-Run Ads</h4>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Ready-To-Run Ads</h3>
                 <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
                     Receive your optimized vertical video assets within days, built specifically to stop the scroll on TikTok, Instagram Reels, and Amazon Mobile.
                 </p>
@@ -194,9 +214,9 @@
             <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px;">
                 // TERMINAL INTAKE GATEWAY
             </p>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 30px; text-transform: uppercase; color: #ffffff !important;">
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 30px; text-transform: uppercase; color: #ffffff !important;">
                 Ready to Optimize Your Device Visuals?
-            </h3>
+            </h2>
             
             <div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
                 <a href="mailto:phong.dao@eosstudiolab.com" class="cta-btn">
@@ -209,11 +229,9 @@
         </div>
     </section>
 
-    <div class="footer">
+    <footer class="footer">
         &copy; 2026 916MOTION LAB. ALL RIGHTS RESERVED. RUNTIME // OPTIMIZED.
-
-        
-    </div>
+    </footer>
 
 </body>
 </html>
