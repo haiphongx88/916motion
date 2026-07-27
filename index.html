@@ -82,9 +82,13 @@
         }
 
         /* 3-Step Benefit Pipeline Layout Engine */
-        .pipeline-flow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto 80px auto; padding: 0 20px; }
+        .pipeline-flow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         .pipeline-card { border-top: 2px solid rgba(255, 255, 255, 0.1); padding-top: 25px; transition: border-color 0.4s ease; }
         .pipeline-card:hover { border-color: #ff6600 !important; }
+
+        /* Capabilities Section Grid */
+        .capabilities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .capability-card { border-left: 2px solid #ff6600; padding-left: 20px; }
 
         /* BUTTON ARCHITECTURE */
         .cta-btn { 
@@ -102,7 +106,7 @@
         }
         .outline-btn:hover { border-color: #ff6600 !important; color: #ff6600 !important; }
 
-        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #444444; }
+        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono', monospace; font-size: 0.7 there; color: #444444; }
 
         /* --- RESPONSIVE MEDIA COMPILER --- */
         @media (max-width: 1024px) {
@@ -112,7 +116,7 @@
             nav { padding: 15px 20px; }
             .nav-right { gap: 15px; }
             .nav-link { font-size: 0.65rem; }
-            .vertical-motion-grid, .pipeline-flow-grid { grid-template-columns: 1fr !important; padding: 20px; }
+            .vertical-motion-grid, .pipeline-flow-grid, .capabilities-grid { grid-template-columns: 1fr !important; padding: 20px; gap: 30px; }
             .section-header { padding-top: 120px; }
         }
     </style>
@@ -124,7 +128,6 @@
         <div class="logo"><a href="index.html">916motion</a></div>
         <div class="nav-right">
             <a href="https://www.instagram.com/fong_the_artist/?hl=en" target="_blank" class="nav-link" style="color: #ff6600 !important; font-weight: 700;">SHOWCASE</a>
-            <!-- Fixed syntax error: added missing quote at the beginning of href -->
             <a href="#tally-open=XxNVdg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave" class="nav-link">START_PROJECT</a>
             <a href="https://wa.me/84368566598" target="_blank" class="nav-link">DM_NOW</a>
             <a href="https://wa.me/84368566598" target="_blank" aria-label="Contact on WhatsApp">
@@ -153,19 +156,16 @@
         </header>
 
         <div class="vertical-motion-grid">
-            <!-- Asset 1 (Fixed alt descriptive text for hardware niche pairing) -->
             <div class="v-gallery-item">
                 <img src="images/servicepage/Shoes_heroshot_comp_v1.jpg" alt="Dynamic footwear visual layout showcase">
                 <div class="gallery-label">01 // CINEMA_EXPOSURE_BURSTS</div>
             </div>
 
-            <!-- Asset 2 -->
             <div class="v-gallery-item">
                 <img src="images/servicepage/Mouse.png" alt="Tech hardware gaming mouse split device animation">
                 <div class="gallery-label">02 // FLOATING_SPLIT_SCREEN</div>
             </div>
 
-            <!-- Asset 3 -->
             <div class="v-gallery-item">
                 <img src="images/servicepage/Headphone.jpg" alt="Premium tech audio headphone macro diagnostic rendering">
                 <div class="gallery-label">03 // MACRO_SCAN_DIAGNOSTIC</div>
@@ -173,7 +173,7 @@
         </div>
     </section>
 
-    <section id="pipeline-intake" style="padding: 120px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
+    <section id="pipeline-intake" style="padding: 120px 40px 60px 40px; background-color: #050505;">
         <header style="text-align: center; max-width: 900px; margin: 0 auto 80px auto;">
             <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
                 THE CREATIVE WORKFLOW
@@ -210,6 +210,38 @@
         </div>
     </section>
 
+    <!-- NEW CAPABILITIES SECTION (Inserted perfectly into your layout gap) -->
+    <section id="capabilities-engine" style="padding: 60px 40px 120px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
+                SYSTEM_CAPABILITIES
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-transform: uppercase; color: #ff6600 !important;">
+                OUR DELIVERABLES
+            </h2>
+        </div>
+
+        <div class="capabilities-grid">
+            <!-- Column 1 -->
+            <div class="capability-card">
+                <span style="color: #ff6600; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 700;">[01 // ATTENTION_CAPTURE]</span>
+                <h3 style="color: #ffffff; font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; margin: 15px 0 10px 0; text-transform: uppercase;">5-Second Social Hooks</h3>
+                <p style="color: #a0a0a0; font-family: 'Space Grotesk', sans-serif; line-height: 1.6; font-size: 0.9rem; font-weight: 300;">
+                    Engineered purely to halt the scroll. We isolate and weaponize the most critical opening window of your physical product assets to capture immediate visual attention on compressed mobile feeds.
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="capability-card">
+                <span style="color: #ff6600; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 700;">[02 // RETENTION_ENGINE]</span>
+                <h3 style="color: #ffffff; font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; margin: 15px 0 10px 0; text-transform: uppercase;">High-Velocity Ad Edits</h3>
+                <p style="color: #a0a0a0; font-family: 'Space Grotesk', sans-serif; line-height: 1.6; font-size: 0.9rem; font-weight: 300;">
+                    The complete asset deployment. We take the optimized hook and seamlessly fuse it with aggressive, high-retention sequencing, native mobile typography, and pacing finely tuned for conversions.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="conversion-gate" style="padding: 100px 40px; background: #050505;">
         <div style="text-align: center; background: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.1); max-width: 800px; margin: 0 auto; padding: 60px 40px;">
             <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px;">
@@ -223,7 +255,7 @@
                 <a href="mailto:phong.dao@eosstudiolab.com" class="cta-btn">
                     [CONNECT_LAB_EMAIL]
                 </a>
-                <a href="https://wa.me/message/RRXLEEOCOKYHI1" target="_blank" class="outline-btn">
+                <a href="https://wa.me/84368566598" target="_blank" class="outline-btn">
                     [DIRECT_WHATSAPP]
                 </a>
             </div>
