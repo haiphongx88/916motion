@@ -103,6 +103,11 @@
         .capability-video-wrapper { margin-top: 25px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); background: #111111; width: 100%; max-width: 340px; margin-left: auto; margin-right: auto; aspect-ratio: 9 / 16; }
         .capability-video-wrapper video { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+        /* FAQ Section Layout Engine */
+        .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .faq-card { background: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; transition: 0.3s; }
+        .faq-card:hover { border-color: #ff6600; }
+
         /* BUTTON ARCHITECTURE */
         .cta-btn { 
             display: inline-block; background: #ff6600 !important; color: #000000 !important; 
@@ -130,13 +135,13 @@
 
         /* --- RESPONSIVE MEDIA COMPILER --- */
         @media (max-width: 1024px) {
-            .vertical-motion-grid, .pipeline-flow-grid { grid-template-columns: repeat(2, 1fr); }
+            .vertical-motion-grid, .pipeline-flow-grid, .faq-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
             nav { padding: 15px 20px; }
             .nav-right { gap: 15px; }
             .nav-link { font-size: 0.65rem; }
-            .vertical-motion-grid, .pipeline-flow-grid, .capabilities-grid { grid-template-columns: 1fr !important; padding: 20px; gap: 30px; }
+            .vertical-motion-grid, .pipeline-flow-grid, .capabilities-grid, .faq-grid { grid-template-columns: 1fr !important; padding: 20px; gap: 30px; }
             .section-header { padding-top: 120px; }
         }
     </style>
@@ -148,7 +153,7 @@
         <div class="logo"><a href="index.html">916motion</a></div>
         <div class="nav-right">
             <a href="https://www.instagram.com/fong_the_artist/?hl=en" target="_blank" class="nav-link" style="color: #ff6600 !important; font-weight: 700;">SHOWCASE</a>
-            <a href="#tally-open=XxNVdg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave" class="nav-link">START_PROJECT</a>
+            <a href="https://tally.so/r/XxNVdg" target="_blank" class="nav-link">START_PROJECT</a>
             <a href="https://www.linkedin.com/in/fongcgi/" target="_blank" class="nav-link">LINKED_IN</a>
             <a href="https://wa.me/84368566598" target="_blank" aria-label="Contact on WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049c0 2.12.54 4.189 1.562 6.033L0 24l6.102-1.6c1.785.973 3.8 1.487 5.857 1.488h.005c6.637 0 12.048-5.412 12.051-12.05a11.816 11.816 0 00-3.565-8.483"/></svg>
@@ -270,7 +275,7 @@
     </section>
 
     <!-- NEW CAPABILITIES SECTION -->
-    <section id="capabilities-engine" style="padding: 60px 40px 120px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
+    <section id="capabilities-engine" style="padding: 60px 40px 100px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background-color: #050505;">
         <div style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
             <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;">
                 SYSTEM_CAPABILITIES
@@ -309,6 +314,86 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: HOW IT WORKS PROCESS -->
+    <section id="how-it-works" style="padding: 100px 40px; background-color: #050505; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 15px;">
+                // SIMPLE PROCESS
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; font-weight: 700; text-transform: uppercase; color: #ffffff !important;">
+                How Working With Us Works
+            </h2>
+        </div>
+
+        <div class="pipeline-flow-grid">
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">STEP 01</div>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Submit Assets & Link</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    Pick your hook package or custom video scope and drop your product link or image assets. Zero physical shipping required.
+                </p>
+            </div>
+
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">STEP 02</div>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Motion Production</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    Our motion team builds high-velocity 9:16 scroll-stopping hooks and ad assets tailored specifically for your tech or gadget brand.
+                </p>
+            </div>
+
+            <div class="pipeline-card">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #ff6600; margin-bottom: 15px;">STEP 03</div>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: #ffffff !important;">Review & Launch</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0 !important; font-weight: 300; line-height: 1.6;">
+                    Receive your high-res MP4 files within 24–48 hours, ready to deploy directly into Meta, TikTok, and Amazon ad campaigns.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FAQ -->
+    <section id="faq-section" style="padding: 100px 40px; background-color: #050505; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto 60px auto;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #ff6600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 15px;">
+                // COMMON QUESTIONS
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; font-weight: 700; text-transform: uppercase; color: #ffffff !important;">
+                Frequently Asked Questions
+            </h2>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: #ff6600; margin-bottom: 12px;">Do I need to send physical product samples?</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0; font-weight: 300; line-height: 1.6;">
+                    No! Zero physical shipping or reshoots required. We transform your existing 2D photos, Amazon/Shopify assets, or 3D/CAD renders into high-end motion hooks.
+                </p>
+            </div>
+
+            <div class="faq-card">
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: #ff6600; margin-bottom: 12px;">What is your turnaround time?</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0; font-weight: 300; line-height: 1.6;">
+                    First motion hook previews and video assets are typically delivered within 24 to 48 hours after project details and assets are submitted.
+                </p>
+            </div>
+
+            <div class="faq-card">
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: #ff6600; margin-bottom: 12px;">What formats and sizes do you deliver?</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0; font-weight: 300; line-height: 1.6;">
+                    We deliver high-definition 9:16 vertical MP4 video files optimized specifically for mobile feeds on Meta (Instagram/Facebook), TikTok, and Amazon Mobile.
+                </p>
+            </div>
+
+            <div class="faq-card">
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: #ff6600; margin-bottom: 12px;">Are revisions included?</h3>
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; color: #a0a0a0; font-weight: 300; line-height: 1.6;">
+                    Yes, quick tweaks on text callouts, timing adjustments, or color adjustments are included to ensure your video ads match your exact brand guidelines.
+                </p>
             </div>
         </div>
     </section>
