@@ -148,4 +148,28 @@
         }
 
         /* 3-Step Benefit Pipeline Layout Engine */
-        .pipeline-flow-grid
+        .pipeline-flow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .pipeline-card { border-top: 2px solid rgba(255, 255, 255, 0.1); padding-top: 25px; transition: border-color 0.4s ease; }
+        .pipeline-card:hover { border-color: #CCFF00 !important; }
+
+        /* Capabilities Section Grid */
+        .capabilities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .capability-card { border-left: 2px solid #CCFF00; padding-left: 20px; display: flex; flex-direction: column; }
+        
+        /* Inline Capability Video Styles */
+        .capability-video-wrapper { margin-top: 25px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); background: #111111; width: 100%; max-width: 340px; margin-left: auto; margin-right: auto; aspect-ratio: 9 / 16; }
+        .capability-video-wrapper video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* FAQ Section Layout Engine */
+        .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .faq-card { background: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; transition: 0.3s; }
+        .faq-card:hover { border-color: #CCFF00; }
+
+        /* BUTTON ARCHITECTURE */
+        .cta-btn { 
+            display: inline-block; background: #CCFF00 !important; color: #000000 !important; 
+            padding: 18px 40px; text-decoration: none; 
+            font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 0.75rem; 
+            letter-spacing: 2px; text-transform: uppercase; transition: 0.3s;
+        }
+        .cta-
