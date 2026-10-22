@@ -188,7 +188,10 @@
             text-align: left;
         }
 
-        .footer { padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #444444; }
+       footer, .footer-copyright, .footer-text {
+  color: #e0e0e0 !important; /* Mã màu trắng xám sáng */
+  opacity: 1 !important;     /* Đảm bảo không bị mờ do opacity thấp */
+}
 
         /* --- RESPONSIVE MEDIA COMPILER --- */
         @media (max-width: 1024px) {
